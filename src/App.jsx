@@ -1,10 +1,10 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Carrinho from './pages/Carrinho';
-import PaginaErro from './pages/PaginaErro';
-import { CarrinhoProvider } from './context/CarrinhoContext';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { CarrinhoProvider } from "./context/CarrinhoContext";
+import Home from "./pages/Home";
+import Carrinho from "./pages/Carrinho";
+import PaginaErro from "./pages/PaginaErro";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
