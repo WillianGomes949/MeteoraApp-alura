@@ -1,36 +1,23 @@
-import React from "react";
+import React from 'react';
 
-import BarraNavegacao from "@/components/BarraNavegacao";
-import Carrossel from "@/components/Carrossel";
-import Rodape from "@/components/Rodape";
-import Produtos from "@/components/Produtos";
-import CarrinhoSuspenso from "@/components/CarrinhoSuspenso";
-import Categorias from "@/components/Categorias";
-import Facilidades from "@/components/Facilidades";
-import Novidades from "@/components/Novidades";
+import BarraNavegacao from '@/components/BarraNavegacao';
+import Carrossel from '@/components/Carrossel';
+import Rodape from '@/components/Rodape';
+import Produtos from '@/components/Produtos';
+import CarrinhoSuspenso from '@/components/CarrinhoSuspenso';
+import Categorias from '@/components/Categorias';
+import Facilidades from '@/components/Facilidades';
+import Novidades from '@/components/Novidades';
 
-const Home = ({
-  carrinho,
-  adicionarProduto,
-  removerProduto,
-  removerProdutoCarrinho,
-  valorTotalCarrinho,
-  quantidadeProdutos,
-}) => {
+const Home = () => {
   return (
     <>
-      <BarraNavegacao quantidadeProdutos={quantidadeProdutos} />
-      <CarrinhoSuspenso
-        carrinho={carrinho}
-        adicionarProduto={adicionarProduto}
-        removerProduto={removerProduto}
-        removerProdutoCarrinho={removerProdutoCarrinho}
-        valorTotalCarrinho={valorTotalCarrinho}
-      />
+      <BarraNavegacao />
+      <CarrinhoSuspenso />
       <main>
         <Carrossel />
         <Categorias />
-        <Produtos adicionarProduto={adicionarProduto} />
+        <Produtos />
         <Facilidades />
         <Novidades />
       </main>
